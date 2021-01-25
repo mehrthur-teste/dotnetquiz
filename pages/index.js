@@ -6,5 +6,5 @@ const Title = styled.h1`
 `
 
 export default function Home() {
-  return <Title>My page mehrthur silva Lemos aprendendo react </Title>
+  return <Title></Title>
 }
