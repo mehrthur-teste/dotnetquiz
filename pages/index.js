@@ -7,6 +7,8 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import React from 'react';
 import { useRouter } from 'next/router';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 
 /*
@@ -16,7 +18,7 @@ const Title = styled.h1`
 `
  */
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -77,21 +79,22 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (infosDoEvento) {
+            <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
               console.log('Fazendo uma submissão por meio do react');
             }}>
-              <input onChange={function (infosDoEvento) {
-                console.log(infosDoEvento.target.value);
-                // State
-                // name = infosDoEvento.target.value;
-                setName(infosDoEvento.target.value);
-              }}
-                placeholder="Diga o seu nome" />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
-              </button>
+              <Input
+                name="nomeDoUsuario"
+                onChange={function (infosDoEvento) {
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Diga o seu nome"
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
