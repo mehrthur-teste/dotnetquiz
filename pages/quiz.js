@@ -103,7 +103,6 @@ export default function QuizPage() {
             setScreenState(screenStates.RESULT);
         }
     }
-
     return (
         <QuizBackground backgroundImage={db.bg}>
             <QuizContainer2>
