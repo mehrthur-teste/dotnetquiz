@@ -14,7 +14,7 @@ function LoadingWidget() {
                 Carregando...
 	     </Widget.Header>
             <Widget.Content>
-                [Desafio do Loading]
+                [Desafios do Loading]
 	     </Widget.Content>
         </Widget>
     );
