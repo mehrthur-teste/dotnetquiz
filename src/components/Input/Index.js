@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const InputBase = styled.input`
+const Input = styled.input`
   width: 100%;
   padding: 15px;
   font-size: 14px;
@@ -17,7 +17,7 @@ const InputBase = styled.input`
 export default function Input({ onChange, placeholder, ...props }) {
     return (
         <div>
-            <InputBase
+            <Input
                 onChange={onChange}
                 placeholder={placeholder}
                 {...props}
