@@ -14,7 +14,7 @@ const Input = styled.input`
   margin-bottom: 25px;
 `;
 
-export default function Input({ onChange, placeholder, ...props }) {
+export default function InputBase({ onChange, placeholder, ...props }) {
     return (
         <div>
             <Input
