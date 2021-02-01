@@ -5,7 +5,7 @@
     "questions": [
         {
             "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-            "title": "Podemos fazer solicitaçãoe http por NextJs com .Net?",
+            "title": "Podemos fazer solicitação http por NextJs com .Net?",
             "description": "Essa é pra começar",
             "answer": 2,
             "alternatives": [
