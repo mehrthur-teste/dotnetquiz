@@ -5,29 +5,30 @@
     "questions": [
         {
             "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-            "title": "Como fazer um seletor por id via CSS?",
-            "description": "Essa é pra aquecer",
+            "title": "Podemos fazer solicitaçãoe http por NextJs com .Net?",
+            "description": "Essa é pra começar",
             "answer": 2,
             "alternatives": [
-                ".elemento",
-                "*elemento",
-                "#elemento",
-                "%elemento"
+                "Não",
+                "Sim sendo o .Net Core frontend",
+                "Sim.",
+                ".net não serve para requisições"
             ]
         },
         {
             "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-            "title": "Como fazer um background gradiente com css?",
-            "description": "Faz tempo em haha",
+            "title": "Onde se encaixa melhor a arquitetura?",
+            "description": "Muito bom para a concepção de projecto",
             "answer": 0,
             "alternatives": [
-                "background: linear-gradient(#e66465, #9198e5);",
-                "background: gradient(#e66465, #9198e5);"
+                "Next Js no lado do cliente - .Net no lado do servidor",
+                "Os dois estão em modo preview ainda"
             ]
         }
     ],
     "external": [
-        ""
+        "https://aluraquiz-css.omariosouto.vercel.app/",
+        "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
         "colors": {
