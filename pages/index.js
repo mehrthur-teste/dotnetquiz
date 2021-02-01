@@ -7,7 +7,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import React from 'react';
 import { useRouter } from 'next/router';
-import Input from '../src/components/Input';
+import InputBase from '../src/components/Input';
 import Button from '../src/components/Button';
 import Link from '../src/components/link';
 import { motion } from 'framer-motion';
@@ -96,7 +96,7 @@ export default function Home() {
               router.push(`/quiz?name=${name}`);
               console.log('Fazendo uma submissão por meio do react');
             }}>
-              <Input
+              <InputBase
                 name="nomeDoUsuario"
                 onChange={function (infosDoEvento) {
                   setName(infosDoEvento.target.value);
